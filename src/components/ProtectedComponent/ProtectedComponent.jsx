@@ -6,6 +6,6 @@ export default function ProtectedComponent({ children }) {
   if (localStorage.getItem("userToken")) {
     return children;
   } else {
-    return <Navigate to={"/login"}/>;
+    return <Navigate to={'/login'}/>;
   }
 }
